@@ -15,7 +15,7 @@ public:
 			while (++l < e && cmp(num[l],num[s]));
 			while (--r > s && !cmp(num[r],num[s]));
 			if (l < r)
-				std::swap(num[l], num[r]);
+			std::swap(num[l], num[r]);
 		}
 		std::swap(num[s], num[r]);
 		Quicksort(num, s, r);
